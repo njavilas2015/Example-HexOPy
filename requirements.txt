@@ -1,0 +1,6 @@
+pydantic==2.10.6
+pytest==8.3.4 
+fastapi
+
+black==25.1.0
+hexopy==0.1.12

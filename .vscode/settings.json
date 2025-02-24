@@ -1,0 +1,11 @@
+{
+    "cSpell.words": [
+        "authtoken",
+        "djangorestframework",
+        "dtos",
+        "filterset",
+        "sessionmaker",
+        "simplejwt",
+        "viewsets"
+    ]
+}
