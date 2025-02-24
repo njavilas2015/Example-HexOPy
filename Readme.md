@@ -11,12 +11,12 @@ HexOPy es un **boilerplate ligero y escalable** para desarrollar aplicaciones en
 
 ## 📦 Instalación  
 ```bash
-git clone https://github.com/njavilas2015/hexopy.git  
-cd hexopy  
+git clone https://github.com/njavilas2015/example-hexopy.git  
 pip install -r requirements.txt  
-
-pip install --index-url https://test.pypi.org/simple/ hexopy
 ```
+
+## Como iniciar?
+![alt text](image.png)
 
 ## 📖 Documentación  
 Consulta la [documentación oficial](#) para aprender cómo estructurar tu aplicación con HexOPy.  
