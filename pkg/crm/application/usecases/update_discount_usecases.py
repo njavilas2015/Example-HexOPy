@@ -1,6 +1,6 @@
 from typing import Optional
 
-from pkg.crm.domain.entities.discount_entity import Discount
+from pkg.crm.domain.entities.discount_entity import DiscountEntity
 
 from pkg.crm.application.dtos.update_discount_dto import UpdateDiscountDTO
 from pkg.crm.application.dtos.discount_output_dto import DiscountOutputDTO
@@ -23,7 +23,7 @@ class UpdateDiscount:
 
     async def execute(self, dto: UpdateDiscountDTO) -> DiscountOutputDTO:
 
-        discount: Optional[Discount] = await self.repository.update_by_id(dto=1)
+        discount: Optional[DiscountEntity] = await self.repository.update_by_id(dto)
 
         if not discount:
             raise ValueError("The discount does not exist.")

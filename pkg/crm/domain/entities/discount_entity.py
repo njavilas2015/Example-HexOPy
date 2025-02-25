@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True, slots=True)
-class Discount:
+class DiscountEntity:
     id: int
     name: str
     percentage: float

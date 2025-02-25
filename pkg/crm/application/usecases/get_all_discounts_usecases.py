@@ -1,3 +1,4 @@
+from typing import List
 from hexopy import Paginate, PaginateDTO
 from pkg.crm.application.dtos.discount_output_dto import DiscountOutputDTO
 from pkg.crm.infrastructure.transformers.discount_transformer import DiscountTransformer
@@ -19,8 +20,12 @@ class GetAllDiscounts:
 
         discounts, total = await self.repository.get_all(dto)
 
-        data = self.transformer.transform_discounts_to_outputs(discounts)
+        data: List[DiscountOutputDTO] = self.transformer.transform_discounts_to_outputs(
+            discounts
+        )
 
-        return Paginate(
+        paginate: Paginate[List[DiscountOutputDTO]] = Paginate(
             page=dto.page, limit=dto.limit, total=total, data=data, total_page=0
         )
+
+        return paginate
