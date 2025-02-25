@@ -5,11 +5,11 @@ from pkg.crm.application.dtos.delete_discount_dto import DeleteDiscountDTO
 from pkg.crm.application.dtos.discount_output_dto import DiscountOutputDTO
 from pkg.crm.application.dtos.update_discount_dto import UpdateDiscountDTO
 
-from pkg.crm.application.usecases.create_discount import CreateDiscount
-from pkg.crm.application.usecases.delete_discount import DeleteDiscount
-from pkg.crm.application.usecases.get_all_discounts import GetAllDiscounts
-from pkg.crm.application.usecases.get_discount import GetDiscount
-from pkg.crm.application.usecases.update_discount import UpdateDiscount
+from pkg.crm.application.usecases.create_discount_usecases import CreateDiscount
+from pkg.crm.application.usecases.delete_discount_usecases import DeleteDiscount
+from pkg.crm.application.usecases.get_all_discounts_usecases import GetAllDiscounts
+from pkg.crm.application.usecases.get_discount_usecases import GetDiscount
+from pkg.crm.application.usecases.update_discount_usecases import UpdateDiscount
 
 from pkg.crm.infrastructure.persistence.repositories.discount_repository import (
     DiscountRepository,
